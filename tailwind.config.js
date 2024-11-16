@@ -7,9 +7,14 @@ module.exports = {
     extend: {
       colors:{
         "navy" : "var(--navy)",
-        "green" : "var(--green)"
-      }
+        "green" : "var(--green)",
+        "slightFade" : "var(--slightFade)",
+        "faded" : "var(--faded)"
+      },
+      fontFamily:
+        {"orbitron": ['Orbitron' , 'sans-serif']
     },
   },
   plugins: [],
+  }
 }

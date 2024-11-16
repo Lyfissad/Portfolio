@@ -1,8 +1,11 @@
 import Header from "./component/Header";
 import Intro from "./component/Intro";
 import './App.css';
+import SideBar from "./component/sidebar";
 
-function App() {
+
+
+export default function App() {
   return (
     <div className="App">
       <Header />
@@ -11,4 +14,4 @@ function App() {
   );
 }
 
-export default App;
+ 
