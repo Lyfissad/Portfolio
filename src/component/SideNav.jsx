@@ -1,13 +1,10 @@
 import React from "react"
 
 
-export default function SideBar(){
+export default function SideBar(props){
     return(
-    <div className="">
-            <div className="text-slightFade absolute
-             inset-y-0 left-40 mt-20 mr-8 h-screen
-              flex items-center justify-center w-4/6
-              bg-slate-700 translate-x-0 ease-in-out duration-300"> 
+    <div>
+            <div className={props.show? "sideBar.active":"sideBar"}> 
                 <ul>
                     <li className="hover:text-green mb-14 text-3xl cursor-pointer font-orbitron">About</li>
                     <li className="hover:text-green mb-14 text-3xl cursor-pointer font-orbitron">Education</li>
@@ -19,7 +16,6 @@ export default function SideBar(){
                        rounded-md absolute
                         font-orbitron">Resume.</button>
                 </ul>
-                
             </div>
             </div>
     )

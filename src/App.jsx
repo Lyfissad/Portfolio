@@ -27,8 +27,8 @@ export default function App() {
                       absolute top-0 right-0"
                       onClick={()=>setSideActive(!SideActive)}
                 />}
-      <Intro />
-      {SideActive && <SideNav className = "bg-slate-900"/>} 
+      <Intro blur = {SideActive}/>
+      <SideNav show = {SideActive} />
     </div>
   );
 }

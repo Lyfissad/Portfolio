@@ -2,6 +2,7 @@
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
+    "./src/component/**/*.{js,jsx,ts,tsx}"
   ],
   theme: {
     extend: {
@@ -9,7 +10,8 @@ module.exports = {
         "navy" : "var(--navy)",
         "green" : "var(--green)",
         "slightFade" : "var(--slightFade)",
-        "faded" : "var(--faded)"
+        "faded" : "var(--faded)",
+        "lightNavy": "#112240"
       },
       fontFamily:
         {"orbitron": ['Orbitron' , 'sans-serif']
