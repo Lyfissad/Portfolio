@@ -15,6 +15,8 @@ module.exports = {
         {"orbitron": ['Orbitron' , 'sans-serif']
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar')
+  ],
   }
-}
+};
