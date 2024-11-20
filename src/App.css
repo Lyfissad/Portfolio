@@ -19,36 +19,23 @@ body{
 
 
 .sideBar{
-  position: absolute;
+  position: fixed;
   color: var(--slightFade);
   justify-content: center;
   align-items: center;
-  margin-top: 5rem;
-  margin-right: 2rem;
   display: flex;
   width: 83.333%;
   border-radius: 0.5rem;
   background-color: var(--lightNavy);
-  top: 0px;
+  top: 5rem;
   bottom: 0px;
   left: 5rem;
-  right: 100%;
-  transition: all 4s;
+  overflow-x: hidden;
+  z-index: 1;
+  transition: all 0.5s;
 }
 
-.sideBar.active{
-  position: absolute;
-  color: var(--slightFade);
-  justify-content: center;
-  align-items: center;
-  margin-top: 5rem;
-  margin-right: 2rem;
-  display: flex;
-  width: 83.333%;
-  border-radius: 0.5rem;
-  background-color: var(--lightNavy);
-  top: 0px;
-  bottom: 0px;
-  left: 5rem;
-  right: 0%;
+.sideBar-inactive{
+  overflow: hidden;
+  transition: all;
 }

@@ -2,9 +2,13 @@ import React from "react"
 
 
 export default function SideBar(props){
+    const [close, setClose] = React.useState(true)
     return(
     <div>
-            <div className={props.show? "sideBar.active":"sideBar"}> 
+            <div id = "side" className={`h-full absolute text-slightFade 
+            justify-center items-center flex border-r-0 bg-lightNavy
+            right-0 top-20 bottom-0 overflow-hidden transition-all ${props.show && close? "w-4/5" : "w-0"}`}>
+                <button onClick={()=>setClose(!close)}>close!</button> 
                 <ul>
                     <li className="hover:text-green mb-14 text-3xl cursor-pointer font-orbitron">About</li>
                     <li className="hover:text-green mb-14 text-3xl cursor-pointer font-orbitron">Education</li>

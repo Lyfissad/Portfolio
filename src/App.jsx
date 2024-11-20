@@ -28,7 +28,7 @@ export default function App() {
                       onClick={()=>setSideActive(!SideActive)}
                 />}
       <Intro blur = {SideActive}/>
-      <SideNav show = {SideActive} />
+      {<SideNav show = {SideActive} />}
     </div>
   );
 }
