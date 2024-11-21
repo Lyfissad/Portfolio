@@ -18,24 +18,3 @@ body{
 }
 
 
-.sideBar{
-  position: fixed;
-  color: var(--slightFade);
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  width: 83.333%;
-  border-radius: 0.5rem;
-  background-color: var(--lightNavy);
-  top: 5rem;
-  bottom: 0px;
-  left: 5rem;
-  overflow-x: hidden;
-  z-index: 1;
-  transition: all 0.5s;
-}
-
-.sideBar-inactive{
-  overflow: hidden;
-  transition: all;
-}
