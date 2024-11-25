@@ -3,6 +3,7 @@ import Header from "./component/Header";
 import Intro from "./component/Intro";
 import './App.css';
 import SideNav from "./component/SideNav"
+import About from "./component/About"
 import { RiMenu4Line } from "react-icons/ri";
 import { IoMdClose } from "react-icons/io";
 
@@ -30,6 +31,7 @@ export default function App() {
       <Intro blur = {SideActive} />
       {SideActive && <div className="w-1/5 h-5/6 absolute bottom-7" onClick = {()=>setSideActive(false)}></div>}
       {<SideNav show = {SideActive} />}
+      <About />
     </div>
   );
 }

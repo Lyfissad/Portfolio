@@ -4,6 +4,7 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
     "./src/component/**/*.{js,jsx,ts,tsx}"
   ],
+    darkMode: 'class',
   theme: {
     extend: {
       colors:{
@@ -13,8 +14,11 @@ module.exports = {
         "faded" : "var(--faded)",
         "lightNavy": "#112240"
       },
+      animation: {
+        bounce : 'bounce 3s linear infinite',
+      },
       fontFamily:
-        {"orbitron": ['Orbitron' , 'sans-serif']
+        {"geist": ['Geist Mono' , 'sans-serif']
     },
   },
   plugins: [

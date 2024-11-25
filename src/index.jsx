@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import LogoPage from "./LogoPage"
 import {
   createBrowserRouter,
   RouterProvider,
@@ -12,7 +13,7 @@ import {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <LogoPage />,
   },
 ]);
 
