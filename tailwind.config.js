@@ -9,13 +9,23 @@ module.exports = {
     extend: {
       colors:{
         "navy" : "var(--navy)",
+        "dark-navy" : "var(--dark-navy)",
         "green" : "var(--green)",
         "slightFade" : "var(--slightFade)",
         "faded" : "var(--faded)",
         "lightNavy": "#112240"
       },
       animation: {
-        bounce : 'bounce 3s linear infinite',
+        bounce : 'bounce 2s linear infinite',
+        fadeInS : 'fadeIn 0.7s ease-in-out',
+        fadeInM : 'fadeIn 1.5s ease-in-out',
+        fadeInL : 'fadeIn 2.5s ease-in-out',
+      },
+      keyframes:{
+        fadeIn: {
+          from: {opacity : 0},
+          to:{opacity : 1},
+        }
       },
       fontFamily:
         {"geist": ['Geist Mono' , 'sans-serif']

@@ -12,7 +12,7 @@ export default function LogoPage(){
         setTimer(true)
     }, 2000);
     return(
-        <div>
+        <div className={timer? "" : "min-h-screen w-full bg-dark-navy absolute"}>
         {!timer && <img src="letter-m.png" alt="logo" className="size-28 
         m-auto mt-64 transition-all animate-bounce"/>}
         {timer && <App />}

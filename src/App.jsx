@@ -31,7 +31,7 @@ export default function App() {
       <Intro blur = {SideActive} />
       {SideActive && <div className="w-1/5 h-5/6 absolute bottom-7" onClick = {()=>setSideActive(false)}></div>}
       {<SideNav show = {SideActive} />}
-      <About />
+      <About blur = {SideActive} />
     </div>
   );
 }
