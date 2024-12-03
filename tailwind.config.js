@@ -13,7 +13,7 @@ module.exports = {
         "green" : "var(--green)",
         "slightFade" : "var(--slightFade)",
         "faded" : "var(--faded)",
-        "lightNavy": "#112240"
+        "lightNavy": "var(--lightNavy)"
       },
       animation: {
         bounce : 'bounce 2s linear infinite',

@@ -5,7 +5,7 @@ import React from "react"
 
 export default function Intro(props){
     return(
-        <div class="dark" className={props.blur? "pt-14 blur-sm shadow-lg z-2 absolute" : "text-left pt-14 absolute"}>
+        <div class="dark" className={`mb-32 mt-32 text-left pt-5 ${props.blur? "blur-sm shadow-lg z-2" : ""}`}>
             <h1 className="text-green ml-9 mt-9 mb-2 text-xl font-geist animate-fadeInS">Hi, my name is</h1>
             <h2 className="text-faded m-9 mt-4 text-3xl font-geist font-extrabold animate-fadeInS">Sheikh Muazzin Azeem.</h2>
             <h3 className="m-9 text-3xl text-slightFade animate-fadeInM">I build Web applications.</h3>
