@@ -16,7 +16,8 @@ module.exports = {
         "lightNavy": "var(--lightNavy)"
       },
       animation: {
-        bounce : 'bounce 2s linear infinite',
+        bounce : 'bounce 3s linear infinite',
+        enlarge : 'enlarge 0.6s linear infinite',
         fadeInS : 'fadeIn 0.7s ease-in-out',
         fadeInM : 'fadeIn 1.5s ease-in-out',
         fadeInL : 'fadeIn 2.5s ease-in-out',
@@ -25,7 +26,10 @@ module.exports = {
         fadeIn: {
           from: {opacity : 0},
           to:{opacity : 1},
-        }
+        },
+        enlarge: {
+            "50%" : {rounded: "50px"} 
+          }
       },
       fontFamily:
         {"geist": ['Geist Mono' , 'sans-serif']
