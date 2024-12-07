@@ -11,11 +11,12 @@ export default function SideBar(props){
                     <li className="hover:text-green mb-14 text-3xl cursor-pointer font-geist">Education</li>
                     <li className="hover:text-green mb-14 text-3xl cursor-pointer font-geist">Experience</li>
                     <li className="hover:text-green mb-14 text-3xl cursor-pointer font-geist">Projects</li>
-                    <button className="transition ease-in-out delay-150 hover:scale-125 text-green
+                    <a href="https://docs.google.com/document/d/e/2PACX-1vQKeHvIEmIte_fyQi13gtg5TrbTjdj7QROMX_jgw6dMhQKhfKUv3R56z2cA5U9Xw6-u91sNjq9GgZIL/pub">
+                    <button className="transition ease-in-out delay-150 active:scale-125 text-green
                      border-green border-solid
                       border-2 p-2 pr-12 pl-12
                        rounded-md absolute
-                        font-geist">Resume</button>
+                        font-geist hover:animate-wiggle" >Resume</button></a>
                 </ul>
             </div>
             </div>

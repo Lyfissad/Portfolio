@@ -17,7 +17,8 @@ module.exports = {
       },
       animation: {
         bounce : 'bounce 3s linear infinite',
-        enlarge : 'enlarge 0.6s linear infinite',
+        smallBounce : 'smallBounce 2s linear infinite',
+        wiggle: 'wiggle 0.5s ease-in-out infinite',
         fadeInS : 'fadeIn 0.7s ease-in-out',
         fadeInM : 'fadeIn 1.5s ease-in-out',
         fadeInL : 'fadeIn 2.5s ease-in-out',
@@ -27,9 +28,33 @@ module.exports = {
           from: {opacity : 0},
           to:{opacity : 1},
         },
-        enlarge: {
-            "50%" : {rounded: "50px"} 
+        smallBounce:{
+            "50%" : {
+              transform: "translateY(-7%)",
+              animationTimingFunction: "cubic-bezier(0.8, 0, 1, 1)"
+            },
+            "0%, 100%" : {
+              transform: "translateY(0)",
+              animationTimingFunction: "cubic-bezier(0, 0, 0.2, 1)"
+            }
+          },
+        wiggle: {
+          "0%":{
+            transform:"rotate(0deg)"
+          },
+          "25%":{
+            transform:"rotate(-3deg)"
+          },
+          "50%":{
+            transform: "rotate(0deg)"
+          },
+          "75%":{
+            transform:"rotate(3deg)"
+          },
+          "100%":{
+            transform: "rotate(0deg)"
           }
+        }
       },
       fontFamily:
         {"geist": ['Geist Mono' , 'sans-serif']
@@ -39,4 +64,4 @@ module.exports = {
     require('tailwind-scrollbar')
   ],
   }
-};
+}
