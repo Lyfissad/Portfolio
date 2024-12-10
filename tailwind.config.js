@@ -7,6 +7,7 @@ module.exports = {
     darkMode: 'class',
   theme: {
     extend: {
+      backgroundOpacity : true, 
       colors:{
         "navy" : "var(--navy)",
         "dark-navy" : "var(--dark-navy)",
@@ -25,8 +26,8 @@ module.exports = {
       },
       keyframes:{
         fadeIn: {
-          from: {opacity : 0},
-          to:{opacity : 1},
+          "0%" : {opacity : 0},
+          "100%" : {opacity : 1},
         },
         smallBounce:{
             "50%" : {

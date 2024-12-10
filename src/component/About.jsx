@@ -9,12 +9,12 @@ import { VscDebugBreakpointData } from "react-icons/vsc";
 
 export default function About(props){
     return(
-    <div className={`pl-9 mb-4 ${props.blur? `blur-sm  z-2 shadow-lg` :  ``}`}>
+    <div className={`pl-9 mb-4 relative top-8 ${props.blur? "blur-sm shadow-lg z-2" :  ""}`}>
         <h1 className="text-3xl
         text-green font-geist animate-fadeInM">About me<hr className="w-3/4 border-green
          border-y"/></h1>
         <div className="text-slightFade text-left justify-center m-1 mr-8 text-md animate-fadeInL">
-            <h4 className="mb-10 mt-10">
+            <h4 className="mb-10 mt-8">
             I hold a Bachelor's degree in Computer Science from 
             Forman Christian College University, completed in 2022. During my
             final year at university, I worked as a React developer on Upwork

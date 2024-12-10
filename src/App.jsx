@@ -18,6 +18,7 @@ import { IoMdClose } from "react-icons/io";
 
 export default function App() {
   const [SideActive, setSideActive] = useState(false)
+  const [ScrollingUp, setScrollingUp] = useState(true)
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef(null);
   useEffect(() => {
@@ -37,26 +38,39 @@ export default function App() {
 
     return () => observer.disconnect();
   }, []);
-  console.log("in view:", isVisible)
+
+  var prevScrollpos = window.scrollY;
+  window.onscroll = function() {
+  var currentScrollPos = window.scrollY;
+    if (prevScrollpos > currentScrollPos) {
+      setScrollingUp(true)
+    } else {
+      setScrollingUp(false)
+    }
+    prevScrollpos = currentScrollPos;
+  }
+
+
   return (
     <div className="bg-navy">
-      <Header />
-      {SideActive? <IoMdClose 
-                    className="size-16 m-3 fill-green
-                     cursor-pointer absolute
-                      top-0 right-0"
+      <Header scrolledUp = {ScrollingUp} />
+      <button className="opacity-0"></button>
+      {SideActive? <IoMdClose
+                    className={`size-16 transition-all duration-300 m-3 fill-green
+                     cursor-pointer fixed
+                      top-0 right-0 ${ScrollingUp? "h-16" : "h-0"}`}
                     onClick={()=>setSideActive(!SideActive)}
                     /> : <RiMenu4Line
-                    className="size-16 m-3
-                     fill-green cursor-pointer
-                      absolute top-0 right-0"
+                    className={`size-16 transition-all duration-300 m-3 fill-green
+                      cursor-pointer fixed
+                       top-0 right-0 ${ScrollingUp? "h-16" : "h-0"}`}s
                       onClick={()=>setSideActive(!SideActive)}
                 />}
       <Intro blur = {SideActive} />
       {SideActive && <div className="w-1/5 h-5/6 absolute bottom-7" onClick = {()=>setSideActive(false)}></div>}
       {<SideNav show = {SideActive} />}
       <div ref={ref} style={{ minHeight: '300px'}}>
-        {isVisible && <About />}
+        {isVisible && <About blur = {SideActive}/>}
       </div>
     </div>
   );
