@@ -4,6 +4,7 @@ import Intro from "./component/Intro";
 import './App.css';
 import SideNav from "./component/SideNav"
 import About from "./component/About"
+import Experience from "./component/Experience"
 import { RiMenu4Line } from "react-icons/ri";
 import { IoMdClose } from "react-icons/io";
 
@@ -56,22 +57,23 @@ export default function App() {
       <Header scrolledUp = {ScrollingUp} />
       <button className="opacity-0"></button>
       {SideActive? <IoMdClose
-                    className={`size-16 transition-all duration-300 m-3 fill-green
+                    className={`size-16 z-30 transition-all duration-300 m-3 fill-green
                      cursor-pointer fixed
                       top-0 right-0 ${ScrollingUp? "h-16" : "h-0"}`}
                     onClick={()=>setSideActive(!SideActive)}
                     /> : <RiMenu4Line
-                    className={`size-16 transition-all duration-300 m-3 fill-green
+                    className={`size-16 z-30 transition-all duration-300 m-3 fill-green
                       cursor-pointer fixed
                        top-0 right-0 ${ScrollingUp? "h-16" : "h-0"}`}s
                       onClick={()=>setSideActive(!SideActive)}
                 />}
       <Intro blur = {SideActive} />
-      {SideActive && <div className="w-1/5 h-5/6 absolute bottom-7" onClick = {()=>setSideActive(false)}></div>}
+      {SideActive && <div className="w-1/5 h-5/6 fixed bottom-7 z-30" onClick = {()=>setSideActive(false)}></div>}
       {<SideNav show = {SideActive} />}
       <div ref={ref} style={{ minHeight: '300px'}}>
         {isVisible && <About blur = {SideActive}/>}
       </div>
+      {isVisible && <Experience blur = {SideActive} />}
     </div>
   );
 }

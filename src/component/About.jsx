@@ -10,7 +10,7 @@ import { VscDebugBreakpointData } from "react-icons/vsc";
 export default function About(props){
     return(
     <div className={`pl-9 mb-4 relative top-8 ${props.blur? "blur-sm shadow-lg z-2" :  ""}`}>
-        <h1 className="text-3xl
+        <h1 className="text-2xl
         text-green font-geist animate-fadeInM">About me<hr className="w-3/4 border-green
          border-y"/></h1>
         <div className="text-slightFade text-left justify-center m-1 mr-8 text-md animate-fadeInL">
@@ -37,7 +37,7 @@ export default function About(props){
                 <li className="mb-4 flex gap-2"><VscDebugBreakpointData className="fill-green"/> MongoDB, FireBase</li>
                 <li className="mb-4 flex gap-2"><VscDebugBreakpointData className="fill-green"/> Python</li>
              </ul>
-             <img src="PortfolioSitePic1.jpeg" alt="profilePic" className="rounded-full cursor-pointer hover:animate-smallBounce size-64 m-auto mt-20"/>
+             <img src="PortfolioSitePic1.jpeg" alt="profilePic" className="rounded-2xl cursor-pointer hover:animate-smallBounce size-64 m-auto mb-36 mt-20"/>
         </div>
         
     </div>
