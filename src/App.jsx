@@ -1,10 +1,14 @@
 import { React, useState, useEffect, useRef } from "react"
+import {Routes, Route} from "react-router-dom"
 import Header from "./component/Header";
 import Intro from "./component/Intro";
 import './App.css';
 import SideNav from "./component/SideNav"
 import About from "./component/About"
 import Experience from "./component/Experience"
+import ExpiTile from "./component/ExpiTile"
+import ErrorMess from "./component/Error"
+import Footer from "./component/Footer"
 import { RiMenu4Line } from "react-icons/ri";
 import { IoMdClose } from "react-icons/io";
 
@@ -73,7 +77,15 @@ export default function App() {
       <div ref={ref} style={{ minHeight: '300px'}}>
         {isVisible && <About blur = {SideActive}/>}
       </div>
-      {isVisible && <Experience blur = {SideActive} />}
+      <Routes>
+        <Route path="/" errorElement={<ErrorMess />} element={isVisible && <Experience blur = {SideActive} />}>
+            <Route index element={<ExpiTile company = "Vodworks" />}/>
+            <Route path="localhost:3000//softpers" element={<ExpiTile company = "Softpers" /> } errorElement={<ErrorMess />}/>
+        </Route>
+      </Routes>
+      <div ref={ref} style={{ minHeight: '300px'}}>
+      {isVisible && <Footer blur = {SideActive}/>}
+      </div>
     </div>
   );
 }

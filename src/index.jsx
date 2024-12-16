@@ -6,6 +6,8 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Experience from './component/Experience';
+import ExpiTile from './component/ExpiTile';
 
 
 

@@ -32,7 +32,7 @@ export default function About(props){
             <ul  className="columns-2 mt-5 font-geist text-sm">
                 <li className="mb-4 flex gap-2"><VscDebugBreakpointData  className="fill-green"/> JavaScript(ES6+)</li>
                 <li className="mb-4 flex gap-2"><VscDebugBreakpointData className="fill-green"/> React</li>
-                <li className="mb-4 flex gap-2"><VscDebugBreakpointData className="fill-green"/> Tailwind/BootStrap</li>
+                <li className="mb-4 flex gap-2"><VscDebugBreakpointData className="fill-green"/> Tailwind CSS</li>
                 <li className="mb-4 flex gap-2"><VscDebugBreakpointData className="fill-green"/> Node.js</li>
                 <li className="mb-4 flex gap-2"><VscDebugBreakpointData className="fill-green"/> MongoDB, FireBase</li>
                 <li className="mb-4 flex gap-2"><VscDebugBreakpointData className="fill-green"/> Python</li>
