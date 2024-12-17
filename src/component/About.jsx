@@ -29,7 +29,7 @@ export default function About(props){
             performance. My goal is to continue advancing in the field,
             taking on senior roles and contributing to innovative software
              solutions.</h4>
-            <ul  className="columns-2 mt-5 font-geist text-sm">
+            <ul  className="grid grid-cols-2 gap-4 mt-7 font-geist text-sm">
                 <li className="mb-4 flex gap-2"><VscDebugBreakpointData  className="fill-green"/> JavaScript(ES6+)</li>
                 <li className="mb-4 flex gap-2"><VscDebugBreakpointData className="fill-green"/> React</li>
                 <li className="mb-4 flex gap-2"><VscDebugBreakpointData className="fill-green"/> Tailwind CSS</li>
