@@ -14,6 +14,7 @@ import ExpiTile from './component/ExpiTile';
 
 
 
+
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path='/' errorElement={<ErrorMess />} element={<LogoPage />}>
       <Route index element={<ExpiTile company = "Vodworks"/>}/>

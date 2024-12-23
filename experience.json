@@ -1,0 +1,28 @@
+{
+    "experience":{
+        "1":{
+            "Name": "Synares Systems",
+            "position": "ReactJS Developer",
+            "detail": {
+                "1": "Responsive sites",
+                "2": "tailwind integration"
+            }
+        },
+        "2":{
+            "Name": "Softpers interactive",
+            "position": "Business Development executive",
+            "detail": {
+                "1": "SAAS sales",
+                "2": "B2B sales in north america"
+            }
+        },
+        "3":{
+            "Name": "Vodworks inc.",
+            "position": "Junior DevOps Engineer",
+            "detail": {
+                "1": "Kuberates",
+                "2": "NginX"
+            }
+        }
+    }
+}
