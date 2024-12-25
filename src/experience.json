@@ -1,6 +1,6 @@
-{
+[{
     "experience":{
-        "1":{
+        "first":{
             "Name": "Synares Systems",
             "position": "ReactJS Developer",
             "detail": {
@@ -8,7 +8,7 @@
                 "2": "tailwind integration"
             }
         },
-        "2":{
+        "second":{
             "Name": "Softpers interactive",
             "position": "Business Development executive",
             "detail": {
@@ -16,7 +16,7 @@
                 "2": "B2B sales in north america"
             }
         },
-        "3":{
+        "third":{
             "Name": "Vodworks inc.",
             "position": "Junior DevOps Engineer",
             "detail": {
@@ -25,4 +25,4 @@
             }
         }
     }
-}
+}]

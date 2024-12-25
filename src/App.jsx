@@ -52,10 +52,6 @@ export default function App() {
     prevScrollpos = currentScrollPos;
   }
 
-  fetch("Portfolio\experience.json")
-    .then((res)=> res.json())
-    .then((data) => console.log(data))
-
   return (
     <div className="bg-navy">
       <Header scrolledUp = {ScrollingUp} />
