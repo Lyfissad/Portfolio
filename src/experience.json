@@ -6,15 +6,17 @@
             "detail": {
                 "1": "Responsive sites",
                 "2": "tailwind integration"
-            }
+            },
+            "timeline": "May 2024 - present"
         },
         "second":{
             "Name": "Softpers interactive",
-            "position": "Business Development executive",
+            "position": "Business Development executive-Contract",
             "detail": {
                 "1": "SAAS sales",
                 "2": "B2B sales in north america"
-            }
+            },
+            "timeline" : "Aug - Dec 2023"
         },
         "third":{
             "Name": "Vodworks inc.",
@@ -22,7 +24,8 @@
             "detail": {
                 "1": "Kuberates",
                 "2": "NginX"
-            }
+            },
+            "timeline": "Mar - Oct 2023"
         }
     }
 }]
