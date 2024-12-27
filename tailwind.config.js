@@ -23,6 +23,7 @@ module.exports = {
         fadeInS : 'fadeIn 0.7s ease-in-out',
         fadeInM : 'fadeIn 1.5s ease-in-out',
         fadeInL : 'fadeIn 2.5s ease-in-out',
+        Grow : "grow 0.5s ease-in-out"
       },
       keyframes:{
         fadeIn: {
@@ -54,6 +55,11 @@ module.exports = {
           },
           "100%":{
             transform: "rotate(0deg)"
+          }
+        },
+        grow:{
+          "0% , 100%":{
+            transform:"scale(1.2,1.2)"
           }
         }
       },
