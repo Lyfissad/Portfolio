@@ -64,7 +64,9 @@ module.exports = {
         }
       },
       fontFamily:
-        {"geist": ['Geist Mono' , 'sans-serif']
+        {
+          "geist": [`Ysabeau SC` , 'sans-serif'],
+          "semiHead":[`Ubuntu` , 'sans-serif']
     },
   },
   plugins: [

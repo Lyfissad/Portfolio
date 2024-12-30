@@ -13,13 +13,35 @@ export default function Experience(props){
 
     return(
         <div className={`pl-8 mb-4 relative top-8 ${props.blur? "blur-sm shadow-lg z-2" :  ""}`}>
-        <h2 className="text-2xl
+        <h2 className="text-xl
         text-green font-geist mt-6 mb-8 animate-fadeInM">Where I've Worked<hr className="w-3/4 border-green
         border-y"/></h2>
-        <div className="flex text-slightFade ml-2 text-lg gap-16 overflow-x-scroll h-20 pt-6">
-            <NavLink to={"/"} onClick={() => FlipState("ss")} className={`bg-navy text-base font-geist hover:bg-navy focus:bg-lightNavy ${activeTab==="ss"? "text-green transition-all duration-200 ease-in-out -translate-y-3": "text-faded"}`}>Synares Systems</NavLink>
-            <NavLink to={"/softpers"} onClick={() => FlipState("soft")} className={`bg-navy text-base hover:bg-lightNavy focus:bg-lightNavy ${activeTab==="soft"? "text-green transition-all duration-200 ease-in-out -translate-y-3": "text-faded"}`}>Softpers</NavLink>
-            <NavLink to={"/vodworks"} onClick={() => FlipState("vod")} className={`bg-navy text-base hover:bg-lightNavy focus:bg-lightNavy ${activeTab==="vod"? "text-green transition-all duration-200 ease-in-out -translate-y-3": "text-faded"}`}>Vodworks</NavLink>
+        <div className="flex text-slightFade ml-2 gap-14 overflow-x-scroll h-20 pt-4">
+            <NavLink to={"/"} 
+                    onClick={() => FlipState("ss")} 
+                    className={
+                        `bg-navy whitespace-nowrap text-base font-semiHead ${activeTab==="ss"?
+                         "text-green transition-all duration-200 ease-in-out -translate-y-3": "text-faded"}`}>
+                            Synares Systems
+                            <hr className={`${activeTab==="ss"? "transition-all ease-in-out duration-500 scale-x-75 origin-center border-green border-y" : "scale-x-0"}`}/>
+            </NavLink>
+            <NavLink to={"/softpers"} 
+                    onClick={() => FlipState("soft")} 
+                    className={
+                        `bg-navy text-base font-semiHead ${activeTab==="soft"?
+                            "text-green transition-all duration-200 ease-in-out -translate-y-3": "text-faded"}`}>
+                                Softpers
+                                <hr className={`${activeTab==="soft"? "transition-all ease-in-out duration-500 scale-x-75 origin-center border-green border-y" : "scale-x-0"}`}/>                   
+            </NavLink>
+            <NavLink to={"/vodworks"} 
+            onClick={() => FlipState("vod")} 
+            className={
+                `bg-navy text-base font-semiHead ${activeTab==="vod"? 
+                "text-green transition-all duration-200 ease-in-out -translate-y-3": "text-faded"}`}>
+                    Vodworks
+                    <hr className={`${activeTab==="vod"? "transition-all ease-in-out duration-500 scale-x-75 origin-center border-green border-y" : "scale-x-0"}`}/>
+                    
+            </NavLink>
             <NavLink to={"/err"} className="bg-navy hover:bg-lightNavy focus:text-green">Error test</NavLink>
         </div>
         <Outlet className="animate-fadeInM"  />

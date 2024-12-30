@@ -13,7 +13,7 @@ export default function About(props){
         <h1 className="text-2xl
         text-green font-geist animate-fadeInM">About me<hr className="w-3/4 border-green
          border-y"/></h1>
-        <div className="text-slightFade text-left justify-center m-1 mr-8 text-md animate-fadeInL">
+        <div className="text-slightFade text-left font-semiHead justify-center m-1 mr-8 text-md animate-fadeInL">
             <h4 className="mb-10 mt-8">
             I hold a Bachelor's degree in Computer Science from 
             Forman Christian College University, completed in 2022. During my
