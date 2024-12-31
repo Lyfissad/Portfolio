@@ -32,7 +32,7 @@ export default function App() {
         }
       },
       {
-        threshold: 0.3, // Trigger when 10% of the component is visible
+        threshold: 0.3, // Trigger when 30% of the component is visible
       }
     );
 
@@ -40,8 +40,9 @@ export default function App() {
 
     return () => observer.disconnect();
   }, []);
+  
 
-  var prevScrollpos = window.scrollY;
+  var prevScrollpos = window.scrollY; //scroll appearing top banner
   window.onscroll = function() {
   var currentScrollPos = window.scrollY;
     if (prevScrollpos > currentScrollPos) {
@@ -73,7 +74,9 @@ export default function App() {
       <div ref={ref} style={{ minHeight: '300px'}}>
         {isVisible && <About blur = {SideActive}/>}
       </div>
+      <div ref={ref} style={{ minHeight: '300px'}}>
       {isVisible && <Experience blur = {SideActive} />}
+      </div>
       <div ref={ref} style={{ minHeight: '300px'}}>
       {isVisible && <Footer blur = {SideActive}/>}
       </div>

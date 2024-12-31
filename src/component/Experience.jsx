@@ -1,19 +1,20 @@
-import React from "react"
+import {React, useState} from "react"
 import { Outlet, NavLink } from "react-router-dom"
 
 
 
 export default function Experience(props){
-    const [activeTab, setActiveTab] = React.useState('ss')
+    const [activeTab, setActiveTab] = useState('ss')
+
 
     function FlipState(newValue){
         setActiveTab(newValue)
     }
-
+    
 
     return(
         <div className={`pl-8 mb-4 relative top-8 ${props.blur? "blur-sm shadow-lg z-2" :  ""}`}>
-        <h2 className="text-xl
+        <h2 className="text-2xl
         text-green font-geist mt-6 mb-8 animate-fadeInM">Where I've Worked<hr className="w-3/4 border-green
         border-y"/></h2>
         <div className="flex text-slightFade ml-2 gap-14 overflow-x-scroll h-20 pt-4">
@@ -44,7 +45,7 @@ export default function Experience(props){
             </NavLink>
             <NavLink to={"/err"} className="bg-navy hover:bg-lightNavy focus:text-green">Error test</NavLink>
         </div>
-        <Outlet className="animate-fadeInM"  />
+        <Outlet className="animate-fadeInL" />
         </div>
         
     )

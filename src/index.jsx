@@ -17,9 +17,18 @@ const expObj = ExpJS[0].experience
 
 const router = createBrowserRouter(createRoutesFromElements(
     <Route exact path='/' errorElement={<ErrorMess />} element={<LogoPage />}>
-        <Route index element={<ExpiTile company = {expObj.first.Name} position={expObj.first.position} timeLine={expObj.first.timeline}/>}/>
-        <Route exact path='/softpers' element={<ExpiTile company = {expObj.second.Name} position={expObj.second.position} timeLine={expObj.second.timeline}/>}/>
-        <Route exact path='/vodworks' element={<ExpiTile company = {expObj.third.Name} position= {expObj.third.position} timeLine = {expObj.third.timeline}/>}/>
+        <Route index element={<ExpiTile company = {expObj.first.Name}
+                                       position={expObj.first.position} 
+                                       timeLine={expObj.first.timeline} 
+                                       details={expObj.first.detail}/>}/>
+        <Route exact path='/softpers' element={<ExpiTile company = {expObj.second.Name} 
+                                                          position={expObj.second.position} 
+                                                          timeLine={expObj.second.timeline} 
+                                                          details={expObj.second.detail}/>}/>
+        <Route exact path='/vodworks' element={<ExpiTile company = {expObj.third.Name}
+                                                        position= {expObj.third.position} 
+                                                        timeLine = {expObj.third.timeline} 
+                                                        details={expObj.third.detail}/>}/>
     </Route>
 ));
 
