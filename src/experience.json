@@ -4,8 +4,11 @@
             "Name": "Synares Systems",
             "position": "ReactJS Developer",
             "detail": {
-                "1": "Responsive sites",
-                "2": "tailwind integration"
+                "1": "Designed and developed responsive, user-friendly interfaces using React.js, Redux, and TypeScript to enhance application performance and user experience",
+                "2": "Implemented reusable and modular React components, ensuring scalability and maintainability across the application",
+                "3": "Optimized application performance through code-splitting, lazy loading, and leveraging React Suspense and React.memo",
+                "4": "Integrated RESTful APIs and GraphQL for seamless communication between the frontend and backend services",
+                "5": "Implemented responsive design principles using CSS3, SASS, and frameworks like Tailwind CSS or Material-UI"
             },
             "timeline": "May 2024 - present"
         },
@@ -13,8 +16,11 @@
             "Name": "Softpers interactive",
             "position": "BD Executive",
             "detail": {
-                "1": "SAAS sales",
-                "2": "B2B sales in north america"
+                "1": "Generated and nurtured leads using tools like LinkedIn Sales Navigator, HubSpot, and Outreach.io, driving a 20% increase in qualified opportunities",
+                "2": "Conducted in-depth market research to identify new business opportunities and target industries, enhancing sales pipeline efficiency",
+                "3": "Built and maintained strong client relationships, resulting in a 30% increase in customer retention rates for SaaS products",
+                "4": "Developed and delivered customized sales presentations and demos, effectively communicating value propositions to potential clients",
+                "5": "Negotiated and closed B2B SaaS contracts, achieving or exceeding monthly and quarterly sales quotas consistently"
             },
             "timeline" : "Aug - Dec 2023"
         },
@@ -22,10 +28,16 @@
             "Name": "Vodworks inc.",
             "position": "Junior DevOps Engineer",
             "detail": {
-                "1": "Kuberates",
-                "2": "NginX"
+                "1": "Managing and resolving issues on multi-node clusters, AWS and DevOps machines. ",
+                "2": "Deployment, Management and debugging of Distributed systems",
+                "3": "Troubleshooting and monitoring servers using Zabbix",
+                "4": "Performed system health checks, updates, and maintenance to minimize downtime and ensure peak performance",
+                "5": "Utilized ticketing systems like Jira, ServiceNow, and Zendesk to manage support requests and track issue resolution progress",
+                "6": "Worked closely with L2/L3 support teams to resolve escalated tickets and implement long-term solutions for recurring issues"
             },
             "timeline": "Mar - Oct 2023"
         }
     }
 }]
+
+

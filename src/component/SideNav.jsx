@@ -1,16 +1,17 @@
 import React from "react"
 
 export default function SideBar(props){
+    
     return(
     <div>
             <div id = "side" className={`h-full fixed text-slightFade
             justify-center items-center flex bg-lightNavy z-20
             right-0 top-20 bottom-0 overflow-hidden transition-all duration-300 ${props.show? "w-4/5" : "w-0"}`}>
                 <ul>
-                    <li className="hover:text-green mb-14 text-3xl cursor-pointer font-geist">About</li>
-                    <li className="hover:text-green mb-14 text-3xl cursor-pointer font-geist">Education</li>
-                    <li className="hover:text-green mb-14 text-3xl cursor-pointer font-geist">Experience</li>
-                    <li className="hover:text-green mb-14 text-3xl cursor-pointer font-geist">Projects</li>
+                    <li onClick={()=>props.flip("about")} className="hover:text-green mb-14 text-3xl cursor-pointer font-geist">About</li>
+                    <li onClick={()=>props.flip("exp")} className="hover:text-green mb-14 text-3xl cursor-pointer font-geist">Experience</li>
+                    <li onClick={()=>props.flip("projects")} className="hover:text-green mb-14 text-3xl cursor-pointer font-geist">Projects</li>
+                    <li onClick={()=>props.flip("contact")} className="hover:text-green mb-14 text-3xl cursor-pointer font-geist">Contact</li>
                     <a href="https://docs.google.com/document/d/e/2PACX-1vQKeHvIEmIte_fyQi13gtg5TrbTjdj7QROMX_jgw6dMhQKhfKUv3R56z2cA5U9Xw6-u91sNjq9GgZIL/pub">
                     <button className="transition ease-in-out delay-150 text-green
                      border-green border-solid

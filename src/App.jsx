@@ -5,6 +5,7 @@ import './App.css';
 import SideNav from "./component/SideNav"
 import About from "./component/About"
 import Experience from "./component/Experience"
+import Projects from "./component/Projects.jsx";
 import Footer from "./component/Footer"
 import { RiMenu4Line } from "react-icons/ri";
 import { IoMdClose } from "react-icons/io";
@@ -28,11 +29,11 @@ export default function App() {
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          observer.disconnect(); // Stop observing after it becomes visible
+           // Stop observing after it becomes visible
         }
       },
       {
-        threshold: 0.3, // Trigger when 30% of the component is visible
+        threshold: 0.2, // Trigger when 30% of the component is visible
       }
     );
 
@@ -53,8 +54,13 @@ export default function App() {
     prevScrollpos = currentScrollPos;
   }
 
+  function scrollToSection(id){
+    document.getElementById(id).scrollIntoView({behavior:"smooth"})
+    setSideActive(!SideActive)
+  }
+
   return (
-    <div className="bg-navy">
+    <div ref={ref} className="bg-navy">
       <Header scrolledUp = {ScrollingUp} />
       <button className="opacity-0"></button>
       {SideActive? <IoMdClose
@@ -70,14 +76,17 @@ export default function App() {
                 />}
       <Intro blur = {SideActive} />
       {SideActive && <div className="w-1/5 h-5/6 fixed bottom-7 z-30" onClick = {()=>setSideActive(false)}></div>}
-      {<SideNav show = {SideActive} />}
-      <div ref={ref} style={{ minHeight: '300px'}}>
+      {<SideNav show = {SideActive} flip = {scrollToSection} />}
+      <div style={{ minHeight: '300px'}}>
         {isVisible && <About blur = {SideActive}/>}
       </div>
-      <div ref={ref} style={{ minHeight: '300px'}}>
+      <div style={{ minHeight: '300px'}}>
       {isVisible && <Experience blur = {SideActive} />}
       </div>
-      <div ref={ref} style={{ minHeight: '300px'}}>
+      <div style={{ minHeight: '300px'}}>
+      {isVisible && <Projects blur = {SideActive}/>}
+      </div>
+      <div style={{ minHeight: '300px'}}>
       {isVisible && <Footer blur = {SideActive}/>}
       </div>
     </div>

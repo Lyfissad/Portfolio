@@ -6,7 +6,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 export default function Footer(){
     return(
-        <div className="flex flex-col items-center">
+        <div id = "contact" className="flex flex-col items-center">
             <h1 className="text-2xl text-center mt-60
         text-green font-geist animate-fadeInM">Get in Touch</h1>
             <h3 className="text-slightFade text-center justify-center m-12
