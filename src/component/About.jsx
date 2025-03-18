@@ -11,7 +11,7 @@ export default function About(props){
     return(
     <div id="about" className={`pl-9 mb-4 ${props.blur? "blur-sm shadow-lg z-2" :  ""}`}>
         <h1 className="text-2xl
-        text-green font-semiHead animate-fadeInM">About me<hr className="w-3/4 border-green
+        text-green font-semiHead animate-fadeInM">About me<hr className="w-3/4 border-slightFade
          border-y"/></h1>
         <div className="text-slightFade text-left font-semiHead justify-center m-1 mr-8 text-md animate-fadeInNoMove">
             <h4 className="mt-5">
@@ -31,7 +31,7 @@ export default function About(props){
              solutions.</h4>
             <ul  className="grid grid-cols-2 gap-4 mt-7 font-geist text-sm">
                 <li className="mb-4 flex gap-2"><VscDebugBreakpointData  className="fill-green"/> JavaScript(ES6+)</li>
-                <li className="mb-4 flex gap-2"><VscDebugBreakpointData className="fill-green"/> React</li>
+                <li className="mb-4 flex gap-2"><VscDebugBreakpointData className="fill-green"/> React.js</li>
                 <li className="mb-4 flex gap-2"><VscDebugBreakpointData className="fill-green"/> Tailwind CSS</li>
                 <li className="mb-4 flex gap-2"><VscDebugBreakpointData className="fill-green"/> Node.js</li>
                 <li className="mb-4 flex gap-2"><VscDebugBreakpointData className="fill-green"/> MongoDB, FireBase</li>

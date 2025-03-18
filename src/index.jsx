@@ -9,7 +9,7 @@ import {
   createRoutesFromElements
 } from "react-router-dom";
 import ExpJS from "./experience.json"
-import ExpiTile from './component/ExpiTile';
+import ExpiTile from './component/ExpTile.jsx';
 
 
 const expObj = ExpJS[0].experience

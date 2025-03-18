@@ -17,7 +17,7 @@ export default function SideBar(props){
                      border-green border-solid
                       border-2 p-2 pr-12 pl-12
                        rounded-md relative
-                        font-geist hover:animate-wiggle" >Resume</button></a>
+                        font-geist" >Resume</button></a>
                 </ul>
             </div>
             </div>

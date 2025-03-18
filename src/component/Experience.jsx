@@ -15,7 +15,7 @@ export default function Experience(props){
     return(
         <div id="exp" className={`pl-8 mb-4 relative top-8 ${props.blur? "blur-sm shadow-lg z-2" :  ""}`}>
         <h2 className="text-2xl
-        text-green font-geist mt-6 mb-8 animate-fadeInM">Where I've Worked<hr className="w-3/4 border-green
+        text-green font-semiHead mt-6 mb-8 animate-fadeInM">Where I've Worked<hr className="w-3/4 border-slightFade
         border-y"/></h2>
         <div className="flex text-slightFade ml-2 gap-14 overflow-x-scroll h-20 pt-4">
             <NavLink to={"/"} 

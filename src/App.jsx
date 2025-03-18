@@ -5,7 +5,7 @@ import './App.css';
 import SideNav from "./component/SideNav"
 import About from "./component/About"
 import Experience from "./component/Experience"
-import Projects from "./component/Projects.jsx";
+import Projects from "./component/Projects";
 import Footer from "./component/Footer"
 import { RiMenu4Line } from "react-icons/ri";
 import { IoMdClose } from "react-icons/io";
@@ -64,14 +64,14 @@ export default function App() {
       <Header scrolledUp = {ScrollingUp} />
       <button className="opacity-0"></button>
       {SideActive? <IoMdClose
-                    className={`size-16 z-30 transition-all duration-300 m-3 fill-green
+                    className={`z-30 transition-all duration-300 m-3 fill-green
                      cursor-pointer fixed
-                      top-0 right-0 ${ScrollingUp? "h-16" : "h-0"}`}
+                      top-0 right-0 ${ScrollingUp? "size-16" : "size-0"}`}
                     onClick={()=>setSideActive(!SideActive)}
                     /> : <RiMenu4Line
-                    className={`size-16 z-30 transition-all duration-300 m-3 fill-green
+                    className={`z-30 transition-all duration-300 m-3 fill-green
                       cursor-pointer fixed
-                       top-0 right-0 ${ScrollingUp? "h-16" : "h-0"}`}s
+                       top-0 right-0 ${ScrollingUp? "size-16" : "size-0"}`}s
                       onClick={()=>setSideActive(!SideActive)}
                 />}
       <Intro blur = {SideActive} />

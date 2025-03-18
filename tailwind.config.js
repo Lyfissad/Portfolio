@@ -9,12 +9,12 @@ module.exports = {
     extend: {
       backgroundOpacity : true, 
       colors:{
-        "navy" : "var(--navy)",
-        "dark-navy" : "var(--dark-navy)",
-        "green" : "var(--green)",
-        "slightFade" : "var(--slightFade)",
-        "faded" : "var(--faded)",
-        "lightNavy": "var(--lightNavy)"
+        "navy" : "#0a192f",
+        "dark-navy" : "#020c1b",
+        "green" : "#64ffda",
+        "slightFade" : "#a8b2d1",
+        "faded" : "#ccd6f6",
+        "lightNavy": "#112240",
       },
       animation: {
         bounce : 'bounce 3s linear infinite',
@@ -24,7 +24,7 @@ module.exports = {
         fadeInS : 'fadeIn 0.7s ease-in-out',
         fadeInM : 'fadeIn 1.5s ease-in-out',
         fadeInL : 'fadeIn 2.5s ease-in-out',
-        Grow : "grow 0.5s ease-in-out"
+        Grow : "grow 3s ease-in-out",
       },
       keyframes:{
         fadeIn: {

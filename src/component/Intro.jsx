@@ -16,7 +16,7 @@ export default function Intro(props){
                      border-green ml-7 -mb-5 left-10 border-solid
                       border-2 p-2 pr-12 pl-12
                        rounded-md relative animate-fadeInL
-                    font-geist hover:animate-wiggle" >Download my resume</button></a>
+                    font-geist hover:animate-pulse" >Download my resume</button></a>
         </div>
     )
 }

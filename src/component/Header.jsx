@@ -10,7 +10,7 @@ export default function Header(props){
     }
     return(
         <>
-            <header id="header" className = {`bg-navy fixed transition-all z-30 overflow-hidden duration-300 shadow-2xl animate-fadeInS justify-between w-full ${props.scrolledUp? "h-20" : "h-0"}`}>
+            <header id="header" className = {`bg-navy opacity-85 fixed transition-all z-30 overflow-hidden duration-300 shadow-2xl animate-fadeInS justify-between w-full ${props.scrolledUp? "h-20" : "h-0"}`}>
                 <NavLink to="/" onClick={scrollBackup}><TbHexagonLetterMFilled className= {`m-3 cursor-pointer overflow-hidden fill-green transition-all duration-300 ${props.scrolledUp? "size-16" : "size-0"}`}/></NavLink>
             </header>
         </>
