@@ -17,7 +17,7 @@ export default function Experience(props){
         <h2 className="text-2xl
         text-green font-semiHead mt-6 mb-8 animate-fadeInM">Where I've Worked<hr className="w-3/4 border-slightFade
         border-y"/></h2>
-        <div className="flex text-slightFade ml-2 gap-14 overflow-x-scroll h-20 pt-4">
+        <div className="flex text-slightFade ml-2 scrollbar-thin scrollbar-thumb-orange-500 scrollbar-track-gray-900 gap-14 overflow-x-scroll h-20 pt-4">
             <NavLink to={"/"} 
                     onClick={() => FlipState("ss")} 
                     className={

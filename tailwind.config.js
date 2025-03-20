@@ -2,7 +2,6 @@
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
-    "./src/component/**/*.{js,jsx,ts,tsx}"
   ],
     darkMode: 'class',
   theme: {
@@ -79,7 +78,9 @@ module.exports = {
     },
   },
   plugins: [
-    require('tailwind-scrollbar')
-  ],
+    require("tailwind-scrollbar")
+    ({ nocompatible: true })  ],
   }
 }
+
+//"./src/component/**/*.{js,jsx,ts,tsx}"

@@ -37,7 +37,7 @@ export default function About(props){
                 <li className="mb-4 flex gap-2"><VscDebugBreakpointData className="fill-green"/> MongoDB, FireBase</li>
                 <li className="mb-4 flex gap-2"><VscDebugBreakpointData className="fill-green"/> Python</li>
              </ul>
-             <img src=".\assets\PortfolioSitePic1.jpeg" alt="profilePic" className="rounded-2xl cursor-pointer hover:animate-smallBounce size-64 m-auto mb-36 mt-20"/>
+             <img src=".\assets\PortfolioSitePic1.jpeg" alt="profilePic" className="rounded-2xl cursor-pointer hover:animate-pulse size-64 m-auto mb-36 mt-20"/>
         </div>
         
     </div>
