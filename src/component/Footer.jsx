@@ -15,7 +15,7 @@ export default function Footer(){
                talk and collaborate.</h3>
             <a className="no-underline" href="mailto:muazzin2009@gmail.com"><button className="transition ease-in-out delay-150 text-green
                      border-green border-solid 
-                      border-2 p-2 pr-12 pl-12
+                      border p-2 pr-12 pl-12
                        rounded-md font-semiHead hover:animate-pulse">Say Hello</button></a>
             <div className="flex space-x-12 mt-24 mb-7">
                 <a href="https://github.com/Lyfissad" className="no-underline"><FaGithub className="fill-slightFade hover:animate-wiggle size-7"/></a>

@@ -1,0 +1,14 @@
+[{"projects":
+{
+    "DMS":{
+        "title": "Driver Monitoring System",
+        "det": "Monitoring  the driver's facial expression and deduce the results regarding driver's attentiveness. The system should be able to gather all the information and store it in the database for future use.",
+        "sNt": "TensorFlow, MongoDB, OpenCV" 
+    },
+    "Hospital": {
+        "title": "Hospital Managment",
+        "det": "A complete solution for all administ- rative and medical scheduling tasks needed in a hospital",
+        "sNt":"Python, MongoDB"
+    }
+}
+}]

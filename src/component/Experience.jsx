@@ -43,7 +43,7 @@ export default function Experience(props){
                     <hr className={`${activeTab==="vod"? "transition-all ease-in-out duration-500 scale-x-75 origin-center border-green border-y" : "scale-x-0"}`}/>
                     
             </NavLink>
-            <NavLink to={"/err"} className="bg-navy hover:bg-lightNavy focus:text-green">Error test</NavLink>
+            <NavLink to={"/err"} className="bg-navy hover:bg-lightNavy focus:text-green">Error</NavLink>
         </div>
         <Outlet className="animate-fadeInL" />
         </div>

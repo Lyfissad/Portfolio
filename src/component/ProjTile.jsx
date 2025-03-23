@@ -9,9 +9,12 @@ export default function ProjTile(props){
             <div className="ml-5 pt-6">
                 <h3 className= "text-lg text-green font-geist animate-fadeInM "> Featured Project</h3>
                 <h2 className=" text-green mt-5 font-semiHead text-2xl">{props.projName}</h2>
-                <h4 className="text-slightFade mt-4 font-semiHead animate-fadeInM">{props.details}</h4>
+                <h4 className="text-slightFade mt-8 text-left pr-5 text-md
+                 font-semiHead w-72 h-48 animate-fadeInM">{props.details}</h4>
+                 <h4 className="text-green right-12 font-geist text-md absolute">{props.stacks}</h4>
             </div>
-            <a href="https://github.com/Lyfissad" className="no-underline"><FaGithub className="fill-slightFade ml-6 mt-44 hover:animate-pulse size-7"/></a>    
+            <a href="https://github.com/Lyfissad" className="no-underline"><FaGithub className="fill-slightFade
+             ml-6 hover:animate-pulse size-7"/></a>    
         </div>
     )
 }
