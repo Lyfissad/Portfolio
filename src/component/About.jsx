@@ -9,7 +9,7 @@ import { VscDebugBreakpointData } from "react-icons/vsc";
 
 export default function About(props){
     return(
-    <div id="about" className={`pl-9 mb-4 ${props.blur? "blur-sm shadow-lg z-2" :  ""}`}>
+    <div id="about" className={`pl-9 mb-4  md:mt-80 ${props.blur? "blur-sm shadow-lg z-2" :  ""}`}>
         <h1 className="text-2xl
         text-green font-semiHead animate-fadeInM">About me<hr className="w-3/4 border-slightFade
          border-y"/></h1>

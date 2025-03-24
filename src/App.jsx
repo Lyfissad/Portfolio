@@ -56,22 +56,22 @@ export default function App() {
 
   function scrollToSection(id){
     document.getElementById(id).scrollIntoView({behavior:"smooth"})
-    setSideActive(!SideActive)
+    setSideActive(false)
   }
 
   return (
     <div ref={ref} className="bg-navy">
-      <Header scrolledUp = {ScrollingUp} />
+      <Header scrolledUp = {ScrollingUp} scrollTosec = {scrollToSection} />
       <button className="opacity-0"></button>
       {SideActive? <IoMdClose
                     className={`z-30 transition-all duration-300 m-3 fill-green
                      cursor-pointer fixed
-                      top-0 right-0 ${ScrollingUp? "size-16" : "size-0"}`}
+                      top-0 right-0 md:hidden ${ScrollingUp? "size-16" : "size-0"}`}
                     onClick={()=>setSideActive(!SideActive)}
                     /> : <RiMenu4Line
                     className={`z-30 transition-all duration-300 m-3 fill-green
                       cursor-pointer fixed
-                       top-0 right-0 ${ScrollingUp? "size-16" : "size-0"}`}s
+                       top-0 right-0 md:hidden ${ScrollingUp? "size-16" : "size-0"}`}s
                       onClick={()=>setSideActive(!SideActive)}
                 />}
       <Intro blur = {SideActive} />
