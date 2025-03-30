@@ -89,6 +89,9 @@ export default function App() {
       <div style={{ minHeight: '300px'}}>
       {isVisible && <Footer blur = {SideActive}/>}
       </div>
+      <div className="">
+          <hr className="h-32 bottom-3 w-0.5 fixed right-8 bg-green"></hr>
+      </div>
     </div>
   );
 }
