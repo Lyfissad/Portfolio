@@ -14,10 +14,10 @@ export default function LogoPage(){
         setTimer(true)
     }, 2000);
     return(
-        <div className={timer? "" : "min-h-screen w-full bg-dark-navy absolute"}>
-        {!timer && <TbHexagonLetterMFilled className="size-28 
-        m-auto mt-64 fill-green transition-all animate-bounce"/>}
-        {timer && <App />}
+        <div className={timer? "" : "flex justify-center items-center h-screen min-h-screen w-full bg-dark-navy absolute"}>
+                {!timer && <TbHexagonLetterMFilled className="size-28 
+                m-auto fill-green transition-all animate-bounce"/>}
+                {timer && <App />}
         </div>
     )
 }
