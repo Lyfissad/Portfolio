@@ -30,6 +30,8 @@ module.exports = {
         "dark-navy" : "#020c1b",
         "green" : "#64ffda",
         "slightFade" : "#a8b2d1",
+        "darkSlate" : "#495670",
+        "slate": "#8892b0",
         "faded" : "#ccd6f6",
         "lightNavy": "#112240",
       },

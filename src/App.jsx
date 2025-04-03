@@ -137,13 +137,13 @@ prevScrollpos = currentScrollPos;
       <div ref={footeRref} id="footer" className={`transition-all duration-1000 ${hasFadedIn.footerFadedin? "opacity-100 -translate-y-4": "opacity-0 translate-y-0"}`}>
       {isVisible && <Footer blur = {SideActive}/>}
       </div>
-      <ul className="fixed bottom-32 left-6 md:visible xs:invisible">
+      <ul className="fixed bottom-32 left-[50px] md:visible xs:invisible">
         <li className="mb-8"><a href="https://github.com/Lyfissad" className="no-underline"><FaGithub className="fill-slightFade size-7 transition-all duration-300 animate-fadeInS hover:fill-green hover:-translate-y-1"/></a></li>
         <li><a href="https://www.linkedin.com/in/sheikh-muazzin-azeem/" className="no-underline"><FaLinkedin className="fill-slightFade size-7 transition-all duration-300 animate-fadeInS hover:fill-green hover:-translate-y-1"/></a></li>
       </ul>
-      <hr className="md:visible h-24 bottom-1 w-px fixed transition-all animate-fadeInS left-9 bg-slightFade  xs:invisible"></hr>
-      <a href="mailto:muazzin2009@gmail.com" className="no-underline"><p className="origin-bottom rotate-90 animate-fadeInNoMove text-slightFade font-semiHead fixed -right-[45px] bottom-56 md:visible xs:invisible transition-all duration-300 hover:text-green hover:-translate-y-1">muazzin2009@gmail.com</p></a>
-      <hr className="md:visible h-24 bottom-1 w-px fixed right-9 animate-fadeInS bg-slightFade xs:invisible"></hr>
+      <hr className="md:visible h-24 bottom-1 w-px fixed transition-all animate-fadeInS left-16 bg-slightFade  xs:invisible"></hr>
+      <a href="mailto:muazzin2009@gmail.com" className="no-underline"><p className="origin-bottom rotate-90 animate-fadeInNoMove text-slightFade font-semiHead fixed -right-[18px] bottom-56 md:visible xs:invisible transition-all duration-300 hover:text-green hover:-translate-y-1">muazzin2009@gmail.com</p></a>
+      <hr className="md:visible h-24 bottom-1 w-px fixed right-16 animate-fadeInS bg-slightFade xs:invisible"></hr>
     </div>
   );
 };

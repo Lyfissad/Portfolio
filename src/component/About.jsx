@@ -11,9 +11,9 @@ export default function About(props){
     return(
     <div id="about" className={`pl-9 mb-4 mt-[30vh] md:mt-[30vh] ${props.blur? "blur-sm shadow-lg z-2" :  ""}`}>
         <h1 className="text-2xl
-        text-green font-semiHead animate-fadeInM">About me<hr className="w-3/4 border-slightFade
+        text-green font-semiHead animate-fadeInM">About me<hr className="w-3/4 border-slate
          border-y"/></h1>
-        <div className="text-slightFade text-left font-semiHead justify-center m-1 mr-8 text-md animate-fadeInNoMove">
+        <div className="text-slate text-left font-semiHead justify-center m-1 mr-8 text-[15px] animate-fadeInNoMove">
             <h4 className="mt-5">
             I hold a Bachelor's degree in Computer Science from 
             Forman Christian College University, completed in 2022. During my
