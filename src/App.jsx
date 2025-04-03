@@ -24,37 +24,83 @@ import { FaLinkedin } from "react-icons/fa";
 export default function App() {
   const [SideActive, setSideActive] = useState(false)
   const [ScrollingUp, setScrollingUp] = useState(true)
-  const [isVisible, setIsVisible] = useState(false);
-  const ref = useRef(null);
+  const [hasFadedIn, setHasFadedIn] = useState({
+    aboutFadedIn: false,
+    expFadedIn: false,
+    projFadedIn: false,
+    footerFadedin: false
+  });
+  const [isVisible, setIsVisible] = useState("");
+  const abouTref = useRef(null);
+  const exPref = useRef(null);
+  const proJref = useRef(null);
+  const footeRref = useRef(null);
+  var changingVisibleState = ""
   useEffect(() => {
     const observer = new IntersectionObserver(
-      ([entry]) => {
+      (entries) => {
+        entries.forEach((entry) => {
+          const componentId = entry.target.id
+          switch(componentId){
+            case "about":
+              changingVisibleState = "aboutFadedIn"
+              break
+            case "experience":
+              changingVisibleState = "expFadedIn" 
+              break
+            case "projects":
+              changingVisibleState = "projFadedIn"
+              break
+            case "footer":
+              changingVisibleState = "footerFadedin"
+              break
+          } 
         if (entry.isIntersecting) {
-          setIsVisible(true);
+          setIsVisible(entry.target.id);
+          setHasFadedIn((prevState) => ({
+            ...prevState,
+            [changingVisibleState]: true, // Set the specific component's fade-in to true
+          }));
+          observer.unobserve(entry.target)
            // Stop observing after it becomes visible
         }
       },
       {
-        threshold: 0.2, // Trigger when 30% of the component is visible
+        threshold: 0.6, // Trigger when 30% of the component is visible
       }
-    );
+    )});
 
-    if (ref.current) observer.observe(ref.current);
 
-    return () => observer.disconnect();
-  }, []);
+    const aboutTracker = abouTref.current
+    const expTracker = exPref.current
+    const projTracker = proJref.current
+    const footerTracker = footeRref.current
+
+    if (aboutTracker) observer.observe(aboutTracker);
+    if (expTracker) observer.observe(expTracker);
+    if (projTracker) observer.observe(projTracker);
+    if (footerTracker) observer.observe(footerTracker);
+
+    return () => {
+      if (aboutTracker) observer.unobserve(aboutTracker);
+      if (expTracker) observer.unobserve(expTracker);
+      if (projTracker) observer.unobserve(projTracker);
+      if (footerTracker) observer.unobserve(footerTracker);
+    };
+
+  },[]);
   
-
-  var prevScrollpos = window.scrollY; //scroll appearing top banner
-  window.onscroll = function() {
+var prevScrollpos = window.scrollY; //scroll appearing top banner
+window.onscroll = function() {
   var currentScrollPos = window.scrollY;
-    if (prevScrollpos > currentScrollPos) {
-      setScrollingUp(true)
-    } else {
-      setScrollingUp(false)
-    }
-    prevScrollpos = currentScrollPos;
+  if (prevScrollpos > currentScrollPos) {
+    setScrollingUp(true)
+  } else {
+    setScrollingUp(false)
   }
+prevScrollpos = currentScrollPos;
+
+ }
 
   function scrollToSection(id){
     document.getElementById(id).scrollIntoView({behavior:"smooth"})
@@ -62,7 +108,7 @@ export default function App() {
   }
 
   return (
-    <div ref={ref} className="bg-navy">
+    <div className="bg-navy">
       <Header scrolledUp = {ScrollingUp} scrollTosec = {scrollToSection} />
       <button className="opacity-0"></button>
       {SideActive? <IoMdClose
@@ -79,27 +125,25 @@ export default function App() {
       <Intro blur = {SideActive} />
       {SideActive && <div className="w-1/5 h-5/6 fixed bottom-7 z-30" onClick = {()=>setSideActive(false)}></div>}
       {<SideNav show = {SideActive} flip = {scrollToSection} />}
-      <div>
-        {isVisible && <About blur = {SideActive}/>}
+      <div ref={abouTref} id="about" className={`transition-all duration-1000 ${hasFadedIn.aboutFadedIn? "opacity-100 -translate-y-4": "opacity-0 translate-y-0"}`}>
+      {<About isshowing={isVisible} blur = {SideActive}/>}
       </div>
-      <div>
-      {isVisible && <Experience blur = {SideActive} />}
+      <div ref={exPref} id="experience" className={`transition-all duration-1000 ${hasFadedIn.expFadedIn? "opacity-100 -translate-y-4": "opacity-0 translate-y-0"}`}>
+      {<Experience blur = {SideActive} />}
       </div>
-      <div style={{ minHeight: '300px'}}>
+      <div ref={proJref} id="projects" className={`transition-all duration-1000 ${hasFadedIn.projFadedIn? "opacity-100 -translate-y-4": "opacity-0 translate-y-0"}`}>
       {isVisible && <Projects blur = {SideActive}/>}
       </div>
-      <div style={{ minHeight: '300px'}}>
+      <div ref={footeRref} id="footer" className={`transition-all duration-1000 ${hasFadedIn.footerFadedin? "opacity-100 -translate-y-4": "opacity-0 translate-y-0"}`}>
       {isVisible && <Footer blur = {SideActive}/>}
       </div>
       <ul className="fixed bottom-32 left-6 md:visible xs:invisible">
-        <li className="mb-8"><a href="https://github.com/Lyfissad" className="no-underline"><FaGithub className="fill-slightFade size-7 transition-all duration-300 hover:fill-green hover:-translate-y-1"/></a></li>
-        <li><a href="https://www.linkedin.com/in/sheikh-muazzin-azeem/" className="no-underline"><FaLinkedin className="fill-slightFade size-7 transition-all duration-300 hover:fill-green hover:-translate-y-1"/></a></li>
+        <li className="mb-8"><a href="https://github.com/Lyfissad" className="no-underline"><FaGithub className="fill-slightFade size-7 transition-all duration-300 animate-fadeInS hover:fill-green hover:-translate-y-1"/></a></li>
+        <li><a href="https://www.linkedin.com/in/sheikh-muazzin-azeem/" className="no-underline"><FaLinkedin className="fill-slightFade size-7 transition-all duration-300 animate-fadeInS hover:fill-green hover:-translate-y-1"/></a></li>
       </ul>
-      <hr className="md:visible h-24 bottom-1 w-px fixed left-9 bg-slightFade  xs:invisible"></hr>
-      <a href="mailto:muazzin2009@gmail.com" className="no-underline"><p className="rotate-90 origin-bottom text-slightFade font-semiHead fixed -right-11 bottom-56 md:visible xs:invisible transition-all duration-300 hover:text-green hover:-translate-y-1">muazzin2009@gmail.com</p></a>
-      <hr className="md:visible h-24 bottom-1 w-px fixed right-9 bg-slightFade xs:invisible"></hr>
+      <hr className="md:visible h-24 bottom-1 w-px fixed transition-all animate-fadeInS left-9 bg-slightFade  xs:invisible"></hr>
+      <a href="mailto:muazzin2009@gmail.com" className="no-underline"><p className="origin-bottom rotate-90 animate-fadeInNoMove text-slightFade font-semiHead fixed -right-[45px] bottom-56 md:visible xs:invisible transition-all duration-300 hover:text-green hover:-translate-y-1">muazzin2009@gmail.com</p></a>
+      <hr className="md:visible h-24 bottom-1 w-px fixed right-9 animate-fadeInS bg-slightFade xs:invisible"></hr>
     </div>
   );
-}
-
- 
+};

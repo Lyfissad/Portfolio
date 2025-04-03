@@ -37,11 +37,12 @@ module.exports = {
         bounce : 'bounce 3s linear infinite',
         smallBounce : 'smallBounce 2s linear infinite',
         wiggle: 'wiggle 0.5s ease-in-out infinite',
-        fadeInNoMove : 'fadeInNoMove 1.5s ease-in-out',
+        fadeInNoMove : 'fadeInNoMove 0.7s ease-in-out',
         fadeInS : 'fadeIn 0.7s ease-in-out',
         fadeInM : 'fadeIn 1.5s ease-in-out',
         fadeInL : 'fadeIn 2.5s ease-in-out',
         Grow : "grow 3s ease-in-out",
+       slide_in: "slideIn 1s ease-in-out upwards"
       },
       keyframes:{
         fadeIn: {
@@ -55,6 +56,10 @@ module.exports = {
         fadeInNoMove: {
           "0%" : {opacity : 0},
           "100%" : {opacity : 1}
+        },
+        slideIn: {
+          '0%': { opacity: '0', transform: 'translateY(-100%)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
         },
         smallBounce:{
             "50%" : {
