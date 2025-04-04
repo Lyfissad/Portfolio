@@ -108,7 +108,7 @@ prevScrollpos = currentScrollPos;
   }
 
   return (
-    <div className="bg-navy">
+    <div className="bg-navy scrollbar-thin">
       <Header scrolledUp = {ScrollingUp} scrollTosec = {scrollToSection} />
       <button className="opacity-0"></button>
       {SideActive? <IoMdClose
