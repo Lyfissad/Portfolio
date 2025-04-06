@@ -8,11 +8,16 @@ module.exports = {
     screens: {
       'xs': '20rem',
 
+      'xssm': {'min':'20rem', 'max': "640px"},
+
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
-
-      'md': '768px',
+      'smmid' : {'min':'640px', 'max': '768px'},
+      
+      'md': '769px',
       // => @media (min-width: 768px) { ... }
+
+      'midlg' : {'min':'800px', 'max': '1023px'},
 
       'lg': '1024px',
       // => @media (min-width: 1024px) { ... }

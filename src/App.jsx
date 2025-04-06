@@ -108,22 +108,22 @@ prevScrollpos = currentScrollPos;
   }
 
   return (
-    <div className="bg-navy scrollbar-thin">
+    <div className="bg-navy scrollbar-thin max-w-screen">
       <Header scrolledUp = {ScrollingUp} scrollTosec = {scrollToSection} />
       <button className="opacity-0"></button>
       {SideActive? <IoMdClose
                     className={`z-30 transition-all duration-300 m-3 fill-green
                      cursor-pointer fixed
-                      top-0 right-0 md:hidden ${ScrollingUp? "size-16" : "size-0"}`}
+                      top-0 right-0 sm:visible md:hidden ${ScrollingUp? "size-16" : "size-0"}`}
                     onClick={()=>setSideActive(!SideActive)}
                     /> : <RiMenu4Line
                     className={`z-30 transition-all duration-300 m-3 fill-green
                       cursor-pointer fixed
-                       top-0 right-0 md:hidden ${ScrollingUp? "size-16" : "size-0"}`}s
+                       top-0 right-0 sm:visible md:hidden ${ScrollingUp? "size-16" : "size-0"}`}s
                       onClick={()=>setSideActive(!SideActive)}
                 />}
       <Intro blur = {SideActive} />
-      {SideActive && <div className="w-1/5 h-5/6 fixed bottom-7 z-30" onClick = {()=>setSideActive(false)}></div>}
+      {SideActive && <div className="w-1/5 smmid:w-3/5 h-5/6 fixed bottom-7 z-30" onClick = {()=>setSideActive(false)}></div>}
       {<SideNav show = {SideActive} flip = {scrollToSection} />}
       <div ref={abouTref} id="about" className={`transition-all duration-1000 ${hasFadedIn.aboutFadedIn? "opacity-100 -translate-y-4": "opacity-0 translate-y-0"}`}>
       {<About isshowing={isVisible} blur = {SideActive}/>}

@@ -14,7 +14,7 @@ export default function Intro(props){
                  Right now, my focus is on developing accessible, user-centered products at <a className="text-green no-underline cursor-pointer" href = "https://pk.linkedin.com/company/synares"> Synares Systems</a>.</h4>
             <a target="blank" href="https://drive.google.com/file/d/1KyjFryb4iRJLfsl9rWek0TAwEUeD67j3/view?usp=drive_link">
             <button className="transition ease-in-out delay-250 text-green
-                     border-green ml-7 -mb-5 left-10 border-solid
+                     border-green ml-7 xs:ml-2 -mb-5 left-10 border-solid
                       border p-2 pr-12 pl-12
                        rounded-md relative animate-fadeInL
                     font-semiHead md:hover:bg-green md:hover:text-navy hover:-translate-y-1" >Download my resume</button></a>
