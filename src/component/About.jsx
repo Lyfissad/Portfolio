@@ -16,7 +16,7 @@ export default function About(props){
         <h1 className="text-2xl
         text-green font-semiHead relative
          animate-fadeInM md:text-4xl">About me</h1>
-         <hr className="w-2/4 relative top-4 md:top-6 border-darkSlate
+         <hr className="w-10/12 md:w-3/5 relative top-4 md:top-6 border-darkSlate
          border-y"/>
         
         </div>
