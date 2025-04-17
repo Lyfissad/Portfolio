@@ -25,7 +25,7 @@ export default function Experience(props){
         border-y"/></h2>
 
         <div className="block md:flex">
-            <div className="flex  text-slightFade pl-4 md:w-72 xs:w-96 scrollbar-thin gap-14 md:gap-1 xs:overflow-x-scroll md:overflow-auto
+            <div className="flex  text-slightFade pl-4 md:w-72 scrollbar-thin gap-12 md:gap-1 overflow-x-scroll md:overflow-auto
                 md:flex-col md:h-80 md:relative md:left-[15rem] h-20 pt-4">
                 <NavLink to={"/"} 
                         onClick={() => FlipState("ss")} 
