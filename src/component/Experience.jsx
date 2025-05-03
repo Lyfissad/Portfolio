@@ -17,7 +17,7 @@ export default function Experience(props){
     
 
     return(
-    <div id="exp" className={`ml-8 mb-4 relative top-8 md:top-40 md:left-[15%] midlg:ml-2 mt-[30vh] ${props.blur? "blur-sm shadow-lg z-2" :  ""}`}>
+    <div id="exp" className={`ml-8 mb-4 relative top-8 md:top-40 md:left-[15%] md:max-w-[85%]  midlg:ml-2 mt-[30vh] ${props.blur? "blur-sm shadow-lg z-2" :  ""}`}>
 
         <h2 className="text-2xl
         text-green font-semiHead mt-6 mb-8 md:relative md:text-3xl animate-fadeInM">Where I've Worked
