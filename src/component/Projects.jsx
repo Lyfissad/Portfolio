@@ -9,8 +9,9 @@ export default function Projects(props){
             <h1 className="text-2xl
             text-green font-semiHead md:text-3xl animate-fadeInM">Some of my work<hr className="w-10/12 md:w-3/5 relative top-4 border-darkSlate
             border-y"/></h1>
-            <div className="md:mx-auto absolute md:flex gap-x-6 w-11/12 md:w-4/6 mt-5">
+            <div className="md:mx-auto absolute md:grid md:grid-cols-2 gap-x-6 w-11/12 md:w-4/6 mt-5">
                 <ProjTile projName = {proJObj.DMS.title} details = {proJObj.DMS.det} stacks = {proJObj.DMS.sNt}/>
+                <a href="https://anime-hub-ebon.vercel.app/" rel="norefferrer" target="_blank"><ProjTile projName = {proJObj.AnimeHub.title} details = {proJObj.AnimeHub.det} stacks= {proJObj.AnimeHub.sNt}/></a>               
                 <ProjTile projName = {proJObj.Hospital.title} details = {proJObj.Hospital.det} stacks= {proJObj.Hospital.sNt}/>
             </div>
         </div>

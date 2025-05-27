@@ -6,7 +6,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 export default function Footer(){
     return(
-        <div id = "footer" className="flex flex-col mt-[100vh] md:mt-[60vh] items-center">
+        <div id = "footer" className="flex flex-col mt-[170vh] md:mt-[100vh] lg:mt-[120vh] items-center">
             <h1 className="text-2xl text-center mt-60
         text-green font-semiHead md:text-5xl animate-fadeInM">Get in Touch</h1>
             <h3 className="text-slate text-center justify-center m-16 md:my-16 md:mx-52 text-md animate-fadeInL">Have a project in mind or just want to chat? I'm always open to new opportunities and collaborations. Feel free to reach out! 🚀</h3>
