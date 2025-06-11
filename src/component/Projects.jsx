@@ -1,4 +1,3 @@
-import React from "react";
 import ProjTile from "./ProjTile";
 import projects from "../project.json"
 
@@ -11,7 +10,11 @@ export default function Projects(props){
             border-y"/></h1>
             <div className="md:mx-auto absolute md:grid md:grid-cols-2 gap-x-6 w-11/12 md:w-4/6 mt-5">
                 <ProjTile projName = {proJObj.DMS.title} details = {proJObj.DMS.det} stacks = {proJObj.DMS.sNt}/>
-                <a href="https://anime-hub-ebon.vercel.app/" rel="norefferrer" target="_blank"><ProjTile projName = {proJObj.AnimeHub.title} details = {proJObj.AnimeHub.det} stacks= {proJObj.AnimeHub.sNt}/></a>               
+
+                <a href="https://anime-hub-ebon.vercel.app/" rel="norefferrer" target="_blank">
+                    <ProjTile projName = {proJObj.AnimeHub.title} details = {proJObj.AnimeHub.det} stacks= {proJObj.AnimeHub.sNt} gitAddress = {proJObj.AnimeHub.GitLink}/>
+                </a>               
+                
                 <ProjTile projName = {proJObj.Hospital.title} details = {proJObj.Hospital.det} stacks= {proJObj.Hospital.sNt}/>
             </div>
         </div>

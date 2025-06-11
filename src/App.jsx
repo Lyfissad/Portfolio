@@ -54,6 +54,7 @@ export default function App() {
             case "footer":
               changingVisibleState = "footerFadedin"
               break
+            default: break;
           } 
         if (entry.isIntersecting) {
           setIsVisible(entry.target.id);

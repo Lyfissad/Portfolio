@@ -16,7 +16,9 @@ export default function ProjTile(props){
                 </h4>
             </div>
             <a
-                href="https://github.com/Lyfissad"
+                href={props.gitAddress}
+                rel="noreferrer"
+                target="_blank"
                 className="absolute bottom-4 left-5 size-7"
             >
                 <FaGithub className="fill-slightFade hover:animate-pulse hover:fill-green hover:-translate-y-1 transition-transform duration-250 size-7" />

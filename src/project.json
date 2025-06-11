@@ -3,17 +3,20 @@
     "DMS":{
         "title": "Driver Monitoring System",
         "det": "Monitoring  the driver's facial expression and deduce the results regarding driver's attentiveness. The system should be able to gather all the information and store it in the database for future use.",
-        "sNt": "TensorFlow, MongoDB, OpenCV" 
+        "sNt": "TensorFlow, MongoDB, OpenCV",
+        "GitLink" : ""
     },
     "AnimeHub": {
         "title": "Anime Hub",
-        "det": "Anime Hub is a sleek, modern anime web app built with React, GraphQL (AniList API), Tailwind CSS, and shadCN/UI. It lets users browse trending, seasonal, and top-rated anime with rich visuals and real-time data. The UI is responsive and polished.",
-        "sNt":"React, GraphQL, TailwindCSS, ShadCN"
+        "det": "Anime Hub is a sleek, modern anime web app built with MERN, GraphQL (AniList API), Tailwind CSS, and shadCN/UI. It lets users Create accounts for personalized feed, browse trending, seasonal, and top-rated anime with rich visuals and real-time data.",
+        "sNt":"MERN, GraphQL, TailwindCSS, ShadCN",
+        "GitLink" : "https://github.com/Lyfissad/Anime-hub-Frontend"
     },
     "Hospital": {
         "title": "Hospital Managment",
         "det": "A complete solution for all administrative and medical scheduling tasks needed in a hospital",
-        "sNt":"Python, MongoDB"
+        "sNt":"Python, MongoDB",
+        "GitLink" : "" 
     }
 }
 }]
