@@ -1,7 +1,7 @@
 <h1 align="center">🚀 My Portfolio App</h1>
 
 <p align="center">
-  ![PortfolioMockUP](https://github.com/user-attachments/assets/96749dde-9403-4064-b6c4-dd229a495aad)
+  <img src="https://github.com/user-attachments/assets/6b0a0aee-cb6e-466e-8c78-35b20aa8ab6c" alt="Mockup"/> 
 </p>
 
 ---
