@@ -12,7 +12,7 @@ export default function Intro(props){
             <h3 className="m-9 text-3xl text-slate animate-fadeInM md:text-6xl">I build web applications.</h3>
             <h4 className="text-slate font-semiHead m-7 -mt-3 text-base p-3 animate-fadeInL md:text-md md:right-12 md:max-w-lg md:min-w-md sm:min-w-md">I’m a software engineer with expertise in creating and designing outstanding digital solutions.
                  Right now, my focus is on developing accessible, user-centered products at <a className="text-green no-underline cursor-pointer" href = "https://pk.linkedin.com/company/synares"> Synares Systems</a>.</h4>
-            <a target="blank" href="https://drive.google.com/file/d/1KyjFryb4iRJLfsl9rWek0TAwEUeD67j3/view?usp=drive_link">
+            <a target="blank" href="https://drive.google.com/file/d/1UVraoZ6WZdazbDMFjJDp0Xfp5gtq7XmC/view?usp=drive_link">
             <button className="transition ease-in-out delay-250 text-green
                      border-green ml-7 xs:ml-2 -mb-5 left-10 border-solid
                       border p-2 pr-12 pl-12
