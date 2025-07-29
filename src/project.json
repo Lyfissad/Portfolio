@@ -12,6 +12,12 @@
         "sNt":"MERN, GraphQL, TailwindCSS, ShadCN",
         "GitLink" : "https://github.com/Lyfissad/Anime-hub-Frontend"
     },
+    "FitLog":{
+        "title": "FitLog Train Track Transform (MVP)",
+        "det": "Fitlog is a mobile-first MVP fitness tracking app that lets users sign up, log workouts, and track progress. It’s designed to test core features and user experience on mobile devices. The app is still a work in progress, with new features and improvements actively being developed.",
+        "sNt": "Next, Typescript, TailwindCSS",
+        "GitLink": "https://github.com/Lyfissad/Fit-log"
+    },
     "Hospital": {
         "title": "Hospital Managment",
         "det": "A complete solution for all administrative and medical scheduling tasks needed in a hospital",

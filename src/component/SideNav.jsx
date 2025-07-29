@@ -12,7 +12,7 @@ export default function SideBar(props){
                     <li onClick={()=>props.flip("exp")} className="hover:text-green mb-14 text-3xl cursor-pointer font-semiHead">Experience</li>
                     <li onClick={()=>props.flip("projects")} className="hover:text-green mb-14 text-3xl cursor-pointer font-semiHead">Projects</li>
                     <li onClick={()=>props.flip("contact")} className="hover:text-green mb-14 text-3xl cursor-pointer font-semiHead">Contact</li>
-                    <a href="https://drive.google.com/file/d/1KyjFryb4iRJLfsl9rWek0TAwEUeD67j3/view?usp=drive_link">
+                    <a href="https://drive.google.com/file/d/13wLzUkYfrVNK3ha2p2iFIvAJJkvPE7fi/view?usp=sharing">
                     <button className="transition ease-in-out delay-150 text-green
                      border-green border-solid
                       border p-2 pr-12 pl-12

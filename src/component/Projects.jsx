@@ -13,6 +13,10 @@ export default function Projects(props){
 
                 <a href="https://anime-hub-ebon.vercel.app/" rel="norefferrer" target="_blank">
                     <ProjTile projName = {proJObj.AnimeHub.title} details = {proJObj.AnimeHub.det} stacks= {proJObj.AnimeHub.sNt} gitAddress = {proJObj.AnimeHub.GitLink}/>
+                </a>
+
+                <a href="https://fit-log-indol.vercel.app/" rel="norefferrer" target="_blank">
+                    <ProjTile projName = {proJObj.FitLog.title} details = {proJObj.FitLog.det} stacks= {proJObj.FitLog.sNt} gitAddress = {proJObj.FitLog.GitLink}/>
                 </a>               
                 
                 <ProjTile projName = {proJObj.Hospital.title} details = {proJObj.Hospital.det} stacks= {proJObj.Hospital.sNt}/>
