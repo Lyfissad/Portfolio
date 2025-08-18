@@ -7,20 +7,20 @@
         "GitLink" : ""
     },
     "AnimeHub": {
-        "title": "Anime Hub",
+        "title": "Anime Hub (Click to open)",
         "det": "Anime Hub is a sleek, modern anime web app built with MERN, GraphQL (AniList API), Tailwind CSS, and shadCN/UI. It lets users Create accounts for personalized feed, browse trending, seasonal, and top-rated anime with rich visuals and real-time data.",
         "sNt":"MERN, GraphQL, TailwindCSS, ShadCN",
         "GitLink" : "https://github.com/Lyfissad/Anime-hub-Frontend"
     },
     "FitLog":{
-        "title": "FitLog Train Track Transform (MVP)",
+        "title": "FitLog Train Track Transform (Click to open)",
         "det": "Fitlog is a mobile-first MVP fitness tracking app that lets users sign up, log workouts, and track progress. It’s designed to test core features and user experience on mobile devices. The app is still a work in progress, with new features and improvements actively being developed.",
-        "sNt": "Next, Typescript, TailwindCSS",
+        "sNt": "Next, Typescript, TailwindCSS,ShadCN",
         "GitLink": "https://github.com/Lyfissad/Fit-log"
     },
     "Hospital": {
         "title": "Hospital Managment",
-        "det": "A complete solution for all administrative and medical scheduling tasks needed in a hospital",
+        "det": "A complete backend solution for all administrative and medical scheduling tasks needed in a hospital",
         "sNt":"Python, MongoDB",
         "GitLink" : "" 
     }
