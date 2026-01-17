@@ -11,11 +11,11 @@ export default function Projects(props){
             <div className="md:mx-auto absolute md:grid md:grid-cols-2 gap-x-6 w-11/12 md:w-4/6 mt-5">
                 <ProjTile projName = {proJObj.DMS.title} details = {proJObj.DMS.det} stacks = {proJObj.DMS.sNt}/>
 
-                <a href="https://anime-hub-ebon.vercel.app/" rel="norefferrer" target="_blank">
+                <a href="https://anime-hub-ebon.vercel.app/" rel="noopener noreferrer" target="_blank">
                     <ProjTile projName = {proJObj.AnimeHub.title} details = {proJObj.AnimeHub.det} stacks= {proJObj.AnimeHub.sNt} gitAddress = {proJObj.AnimeHub.GitLink}/>
                 </a>
 
-                <a href="https://fit-log-indol.vercel.app/" rel="norefferrer" target="_blank">
+                <a href="https://fit-log-indol.vercel.app/" rel="noopener noreferrer" target="_blank">
                     <ProjTile projName = {proJObj.FitLog.title} details = {proJObj.FitLog.det} stacks= {proJObj.FitLog.sNt} gitAddress = {proJObj.FitLog.GitLink}/>
                 </a>               
                 
