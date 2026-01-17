@@ -22,22 +22,24 @@ export default function About(props){
         </div>
         
         <div className="text-slate relative text-left font-semiHead justify-center m-1 mr-8 text-[15px] md:text-[18px] md:leading-relaxed smmid:max-w-[90%] md:max-w-[35%] md:relative animate-fadeInNoMove">
-            
-            <h4 className="mt-12 md:mt-24 flex text-start">
-            I hold a Bachelor's degree in Computer Science from 
-            Forman Christian College University, completed in 2022. During my
-            final year at university, I worked as a React developer on Upwork
-            for about a year, where I gained hands-on experience building
-            dynamic web applications and collaborating with international clients.
+             <h4 className="mt-12 md:mt-24 flex text-start"> 
+            I hold a Bachelor’s degree in Computer Science from Forman Christian College University, completed
+             in 2022. During my final year at university, I worked as a React developer on Upwork for about a year,
+              gaining hands-on experience building dynamic web applications and collaborating with international
+            clients.
             </h4>
-            <h4>
-            After graduation, I joined <a className="text-green no-underline cursor-pointer" href="https://vodworks.com/">Vodworks</a> as a Technical Engineer, where I 
-            enhanced my skills in system integration. Currently, I am working
-            at <a className="text-green no-underline cursor-pointer" href = "https://pk.linkedin.com/company/synares">Synares Systems</a> as a React Engineer, focusing on developing
-            user-centric web applications and optimizing frontend 
-            performance. My goal is to continue advancing in the field,
-            taking on senior roles and contributing to innovative software
-             solutions.</h4>
+            <h4 className="mt-4">
+                After graduation, I joined <a className="text-green no-underline cursor-pointer" href="https://vodworks.com/"><span className="inline-block transition-all hover:-translate-y-0.5">Vodworks</span> </a> as a Technical Engineer, where I further strengthened my skills
+                 in system integration and technical problem-solving. I later worked 
+                 at <a className="text-green no-underline cursor-pointer" href = "https://pk.linkedin.com/company/synares"><span className="inline-block transition-all hover:-translate-y-0.5">Synares Systems</span> </a>
+            as a React Engineer, focusing on developing user-centric web applications and optimizing frontend performance.
+                   Alongside my professional experience, I am currently pursuing a Master’s degree in Data Science at FAST Lahore,
+                    expanding my expertise in data-driven systems and analytics.</h4>
+            <h4 className="mt-4">
+                My goal is to continue advancing in the field by taking on senior technical roles and
+                         contributing to innovative software solutions, and I am actively seeking new opportunities
+                          where I can apply and grow my skill set.
+            </h4>        
             
             <ul  className="grid grid-cols-2 gap-4 mt-7 font-geist text-sm">
                 <li className="mb-4 flex gap-2"><VscDebugBreakpointData  className="fill-green"/> JavaScript(ES6+)</li>

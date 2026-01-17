@@ -17,7 +17,7 @@ export default function Header(props){
                     <li onClick={()=>props.scrollTosec("projects")} className="mr-6 hover:text-green cursor-pointer transition-all ease-in-out delay-100 hover:-translate-y-1">Projects</li>
                     <li onClick={()=>props.scrollTosec("footer")} className="mr-6 hover:text-green cursor-pointer transition-all ease-in-out delay-100 hover:-translate-y-1">Contact</li> 
                 </ul>
-                <a href="https://drive.google.com/file/d/13wLzUkYfrVNK3ha2p2iFIvAJJkvPE7fi/view?usp=sharing">
+                <a href="https://drive.google.com/file/d/1qcYnTQ_hssHhcbfXu7pgNXQovU9UFA8F/view?usp=sharing" target="_blank">
                 <button className="transition-all ease-in-out delay-100 text-green
                      border-green border-solid size-8
                       border w-24 text-center mr-4 text-sm
