@@ -2,18 +2,18 @@
 {
     "DMS":{
         "title": "Driver Monitoring System",
-        "det": "Monitoring  the driver's facial expression and deduce the results regarding driver's attentiveness. The system should be able to gather all the information and store it in the database for future use.",
+        "det": "Monitoring  the driver's facial expression and deduce the results regarding driver's attentiveness. The system should be able to gather all the information and store it in the database for future use. ",
         "sNt": "TensorFlow, MongoDB, OpenCV",
         "GitLink" : ""
     },
     "AnimeHub": {
-        "title": "Anime Hub (Click to open)",
+        "title": "Anime Hub",
         "det": "Anime Hub is a sleek, modern anime web app built with MERN, GraphQL (AniList API), Tailwind CSS, and shadCN/UI. It lets users Create accounts for personalized feed, browse trending, seasonal, and top-rated anime with rich visuals and real-time data.",
         "sNt":"MERN, GraphQL, TailwindCSS, ShadCN",
         "GitLink" : "https://github.com/Lyfissad/Anime-hub-Frontend"
     },
     "FitLog":{
-        "title": "FitLog Train Track Transform (Click to open)",
+        "title": "FitLog Train Track Transform",
         "det": "Fitlog is a mobile-first MVP fitness tracking app that lets users sign up, log workouts, and track progress. It’s designed to test core features and user experience on mobile devices. The app is still a work in progress, with new features and improvements actively being developed.",
         "sNt": "Next, Typescript, TailwindCSS,ShadCN",
         "GitLink": "https://github.com/Lyfissad/Fit-log"
