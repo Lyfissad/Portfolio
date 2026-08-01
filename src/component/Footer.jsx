@@ -12,7 +12,7 @@ export default function Footer(){
             <h3 className="text-slate text-center justify-center m-16 md:my-16 md:mx-52 text-md animate-fadeInL">Have a project in mind or just want to chat? I'm always open to new opportunities and collaborations. Feel free to reach out! 🚀</h3>
             <a className="no-underline" href="mailto:muazzin2009@gmail.com"><button className="transition ease-in-out delay-150 text-green
                      border-green border-solid 
-                      border p-2 pr-12 pl-12
+                      border p-2 px-12
                        rounded-md font-semiHead md:hover:bg-green md:hover:text-navy hover:animate-pulse hover:-translate-y-1">Say Hello</button></a>
             <div className="flex space-x-12 mt-24 mb-7 md:invisible">
                 <a href="https://github.com/Lyfissad" className="no-underline"><FaGithub className="fill-slightFade hover:animate-wiggle size-7"/></a>
