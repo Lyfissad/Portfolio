@@ -14,7 +14,7 @@ export default function Intro(props){
                  engineer with experience designing and building accessible, user-centered digital solutions. Currently pursuing
                   a Master’s in Data Science, with a strong focus on creating high-quality, scalable web applications. 
                   Actively seeking new opportunities to contribute technical expertise and deliver meaningful, user-focused products.</h4>
-            <a target="blank" href="https://drive.google.com/file/d/1qcYnTQ_hssHhcbfXu7pgNXQovU9UFA8F/view?usp=sharing">
+            <a target="blank" href="https://drive.google.com/file/d/1fsdcqBcpWTx3mszC_uHoWzEoQuEb9Hxa/view?usp=sharing">
             <button className="transition ease-in-out delay-250 text-green
                      border-green ml-7 xs:ml-2 -mb-5 left-10 border-solid
                       border p-2 pr-12 pl-12
