@@ -11,7 +11,7 @@ import { RiMenu4Line } from "react-icons/ri";
 import { IoMdClose } from "react-icons/io";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-
+import { Analytics } from '@vercel/analytics/react';
 
 
 
@@ -110,6 +110,7 @@ prevScrollpos = currentScrollPos;
 
   return (
     <div className="bg-navy scrollbar-thin max-w-screen">
+      <Analytics />
       <Header scrolledUp = {ScrollingUp} scrollTosec = {scrollToSection} />
       <button className="opacity-0"></button>
       {SideActive? <IoMdClose
